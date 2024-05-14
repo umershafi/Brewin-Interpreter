@@ -1,25 +1,32 @@
-# CS 131 Fall 2023: Brewin# Interpreter
+Brewin# Interpreter
 
-Hey there! This is a template repository that contains the necessary boilerplate for [CS 131](https://ucla-cs-131.github.io/fall-23-website/)'s quarter-long project: making an interpreter. The project specs are as follows:
+Overview
+The Brewin Interpreter Suite is a robust interpreter capable of handling a variety of programming constructs, including functions, object-oriented programming, first-class functions, closures, and prototypal inheritance. It is designed to execute Brewin, Brewin++, and Brewin# programs, each adding layers of functionality to support more complex software development paradigms.
 
-1. [Project #1 Spec](https://docs.google.com/document/d/1RgPjCH_LtEA-e-SJhtB0hDKn6tMk5YNBcAyhAwFJehc/edit#heading=h.63zoibjlqvny)
+Functionality
+Basic Language Constructs: Supports integer, string, boolean, and nil values.
+Control Structures: Includes if, if/else statements, and while loops with basic error handling mechanisms.
+Function Definitions: Functions can be defined with varying parameters, supporting recursion, function overloading, and closures.
+Object-Oriented Features: Enables object-oriented programming without classes, allowing objects to have methods and fields, with support for prototypal inheritance.
+Error Handling: Implements comprehensive error handling including specific error types like NAME_ERROR and TYPE_ERROR.
+Usage
+To execute a Brewin program, use one of the following commands depending on the feature set of your program:
 
-There are three stages to the project; students are currently at the first. Thus, this folder contains the necessary bootstrapping code:
-
-- `intbase.py`, the base class and enum definitions for the interpreter
-- `brewparse.py`, which contains the `parse_program` function to parse Brewin programs
-- `brewlex.py`, which contains helper functions for brewparse.py
-
-Some notes on your submission (for Project 1)
-
-1. You **must have a top-level, versioned `interpreterv1.py` file** that **exports the `Interpreter` class**. If not, **your code will not run on our autograder**.
-2. You may also submit one or more additional `.py` modules that your interpreter uses, if you decide to break up your solution into multiple `.py` files.
-3. You **should not modify/submit `intbase.py`, `brewparse.py`, or `brewlex.py`**; we will use our own when grading.
-
-You can find out more about our autograder, including how to run it, in [its accompanying repo](https://github.com/UCLA-CS-131/fall-23-autograder).
-
-## Licensing and Attribution
-
-This is an unlicensed repository; even though the source code is public, it is **not** governed by an open-source license.
-
-This code was primarily written by [Carey Nachenberg](http://careynachenberg.weebly.com/), with support from his TAs for the [Fall 2023 iteration of CS 131](https://ucla-cs-131.github.io/fall-23-website/).
+bash
+Copy code
+python interpreter.py [file.brewin]
+Features
+Extended Operations
+Supports all binary integer arithmetic operations, boolean logic operations, string manipulation, and comparisons.
+Dynamic scoping is utilized for variable and function visibility, with environments that respect the call stack.
+First-Class Functions and Closures
+Functions are first-class citizens that can be passed as arguments, returned from other functions, or stored in variables.
+Closures capture and maintain their lexical environment, allowing for powerful functional programming patterns.
+Object-Oriented Programming
+Introduces objects that can have both fields and methods, with the capability to add or modify these at runtime.
+Supports prototypal inheritance, where objects can inherit fields and methods from a prototype object.
+Known Issues/Bugs
+As of the latest release, there are no critical issues known. The interpreter has been extensively tested with a variety of test cases to ensure functionality and stability.
+Additional Notes
+The interpreter is based on the foundational InterpreterBase class, which provides essential functionalities and should not be modified to maintain the integrity of the execution environment.
+Developers are encouraged to extend the functionalities and participate in debugging and enhancing the interpreter by submitting patches and improvements.
