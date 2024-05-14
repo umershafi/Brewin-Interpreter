@@ -3,7 +3,7 @@
 ## Overview
 The Brewin Interpreter Suite is a robust interpreter capable of handling a variety of programming constructs, including functions, object-oriented programming, first-class functions, closures, and prototypal inheritance. It is designed to execute Brewin# programs, each adding layers of functionality to support more complex software development paradigms.
 
-## Click [here]([quora.com/profile/Ashish-Kulkarni-100](https://barista-f23.fly.dev/)) to use the Interpreter
+## Click [here](https://barista-f23.fly.dev/) to use the Interpreter
 
 ## Functionality
 - Basic Language Constructs: Supports integer, string, boolean, and nil values.
